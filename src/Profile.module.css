@@ -2,9 +2,10 @@
     width: 520px;
     padding-top: 56px;
     align-items: center;
-    background-color: rgb(248, 244, 244);
+    background-color: white;
     text-align: center;
     border-radius: 2%;
+    margin: 0 auto;
     margin-bottom: 40px;
 }
 
