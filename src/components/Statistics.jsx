@@ -20,8 +20,14 @@ export const Statistics = ({title, stats}) => {
 }
 
 const Item = ({ status }) => {
-    return <li className={css.item} >
+    return <li className={css.item} style={{backgroundColor: getRandomHexColor()}}>
                 <span className={css.label}>{ status.label}</span>
                 <span className={css.percentage}>{ status.percentage}%</span>
             </li> 
+}
+
+const getRandomHexColor = () =>  {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
 }
